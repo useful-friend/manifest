@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Google repo manifest for sensor fusion platform.
+  Usage: repo init -u <manifest-repo-url> -m default.xml
+        repo sync
+-->
+<manifest>
+  <remote name="origin" fetch="." />
+  <default remote="origin" revision="main" sync-j="4" />
+
+  <!-- HAL: Hardware Abstraction Layer (SPI + I2C) -->
+  <project name="hal" path="hal" />
+
+  <!-- Transport: ZMQ message layer (depends on HAL) -->
+  <project name="transport" path="transport" />
+
+  <!-- CTS Gen3 thermal camera (FT4222 USB-to-SPI/I2C bridge) -->
+  <project name="cts-gen3" path="sensors/cts-gen3" />
+
+  <!-- Radar sensor device 
+  <project name="radar" path="sensors/radar" />-->
+
+  <!-- Fusion: Multi-sensor fusion (thermal + radar) 
+  <project name="fusion" path="fusion" />-->
+</manifest>
