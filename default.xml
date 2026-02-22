@@ -17,6 +17,9 @@
   <!-- CTS Gen3 thermal camera (FT4222 USB-to-SPI/I2C bridge) -->
   <project name="cts-gen3" path="sensors/cts-gen3" />
 
+  <!-- complete builder -->
+  <project name="builder" path="." />
+  
   <!-- Radar sensor device 
   <project name="radar" path="sensors/radar" />-->
 
