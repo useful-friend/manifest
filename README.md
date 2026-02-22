@@ -23,7 +23,7 @@ export PATH=~/bin:$PATH
 
 ```bash
 # Replace with your manifest repo URL (e.g. https://github.com/yourorg/sensor-platform-manifest)
-repo init -u https://github.com/yourorg/sensor-platform-manifest -m default.xml
+repo init -u https://github.com/useful-friend/manifest.git -m default.xml
 repo sync
 ```
 
